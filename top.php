@@ -40,7 +40,7 @@
 session_start();
 
 if (count($_SESSION) == 0) {
-	header('Location: http://tt-222.99sv-coco.com/login.php');
+	header('Location: https://example.com/top.php');
 	exit;
 }
 
@@ -48,9 +48,9 @@ echo "ようこそ " . $_SESSION['account'] . "さん！<br>";
 
 
 //データベースに接続
-$dsn = 'mysql:dbname=tt_222_99sv_coco_com;host=localhost;charset=utf8mb4';
-$user = 'tt-222.99sv-coco';
-$password = 'r2GCdFeN';
+$dsn = 'データベース名';
+$user = 'ユーザ名';
+$password = 'パスワード';
 $pdo = new PDO($dsn, $user, $password); //PDOオブジェクトを作成（操作の準備)
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); //exceptionを投げるようにする
 
