@@ -315,4 +315,5 @@ foreach($res as $row){
 }
 
 $pdo = null;
+
 ?>
