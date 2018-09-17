@@ -132,7 +132,7 @@ foreach ($res as $row) {
 
 #items a{
 	text-decoration:none;
-}
+} 
 #items a:hover{
 	opacity:0.6;
 	filter: alpha(opacity=60);
