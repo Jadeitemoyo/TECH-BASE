@@ -26,7 +26,7 @@ $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); //exceptionを投
 if (!empty($_POST)) {
     $key = $_POST['key'];
 
-    if ($key == '1117') {
+    if ($key == 'password') {
         $stmt = $pdo->prepare("insert into items(id, name, price, img, detail, moreDetail, color) values(:id, :name, :price, :img, :detail, :moreDetail, :color)");
         $stmt->bindParam(':id', $id);
         $stmt->bindParam(':name', $name);
