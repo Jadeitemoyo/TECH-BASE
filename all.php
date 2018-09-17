@@ -88,7 +88,7 @@ foreach ($res as $row) {
 	</span>
 	<p>詳しく見る</p>
 	<a href=""></a>
-</li>
+</li> 
 -->
 </ul>
 </div>
